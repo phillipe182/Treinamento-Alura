@@ -1,0 +1,180 @@
+:root {
+  /* cores para ser utilizadas como variaveis em todo projeto*/
+  --branco-principal: #ffffff;
+  --cinza-secundario: #c0c0c0c0;
+  --botão-azul: #167bf7;
+  --cor-fundo: #00030c;
+  --fonte-principal: "Inter";
+  --botão-azul-efeito: #3c92fa;
+
+  
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--branco-principal);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.principal {
+  background-image: url("Imagens/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* tamanho do background */
+  align-items: center;
+  /* alinhar item quando ta no grid ele alinha no centro da coluna*/
+  text-align: center;
+  /*funciona alinha tudo ao centro dentro de um elemento de bloco*/
+}
+
+.container {
+  height: 100vh;
+  /* Altura da tela do dispositivo */
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+  background-color: var(--botão-azul);
+  /* corde de fundo */
+  border-radius: 5px;
+  /* deixa a borda mais redodanda*/
+  padding: 1em;
+  /* tamanho da fonte */
+  color: var(--branco-principal);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1em;
+
+}
+
+.botao_secundario {
+  background-color: transparent;
+  border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+  font-size: 12px;
+  color: var(--cinza-secundario);
+}
+
+.container__titulo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container__imagem {
+  margin: 1em 0 2em 0;
+  /*margin nos quatro sentidos como sentido horario do relotio*/
+}
+
+.container__caixa {
+  margin: 0 6em;
+  /*margin pode ser pra dois valores 0 topo e baixo e o 6em esquerda e direita*/
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.descricao__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--branco-principal);
+  margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+  color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+  display: inline-block;
+  /*transforma o elemento em linha ocupando so espaço necessario, block faz a quebra de linha*/
+  margin-top: 1em;
+}
+
+.container__descricao {
+  padding: 2em;
+}
+
+.dispositivos__lista {
+  display: flex;
+  /*faz com que fica um do lado do outro*/
+  justify-content: center;
+  list-style-type: none;
+  /*tira o ponto ou asteriscos da lista vindo do ul*/
+  margin: 5em 0;
+}
+
+.dispositivos {
+  text-align: center;
+}
+
+.dispositivos__titulo {
+  font-size: 48px;
+  color: var(--branco-principal);
+}
+
+.lista__item {
+  font-size: 32px;
+  color: var(--branco-principal);
+}
+
+.rodape__lista {
+  display: flex;
+  /*faz com que fica um do lado do outro*/
+  justify-content: center;
+  list-style-type: none;
+  /*tira o ponto ou asteriscos da lista vindo do ul*/
+  margin: 1em;
+
+}
+
+.lista__link a{
+ text-decoration: none;
+ color: var(--branco-principal);
+ margin-left: 1em;
+}
+
+.rodape__texto {
+  margin: 1em 0;
+  font-size: 14px;
+  color: var(--cinza-secundario);
+}
+
+.rodape {
+  text-align: center;
+  margin: 5em 3em;
+}
+
+.lista__link a:hover {
+  color: var(--botão-azul);
+}
+
+.lista__link a:active {
+  color: red;
+}
+
+.container__botao:hover {
+  background-color: var(--botão-azul-efeito);
+  color: var(--cor-fundo) ;
+}
